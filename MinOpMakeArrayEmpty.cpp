@@ -44,7 +44,7 @@ int minOperations(vector<int>& nums)
         uOMap[nums[i]]++;
     }
     // problem solution
-    // if array element count divisible by 3 or 2 then count the quotents.
+    // if array element count divisible by 3 or 2 then count the quotients.
     // else return count -1
     int count=0;
     cout<<"Print unordered map"<<endl;
