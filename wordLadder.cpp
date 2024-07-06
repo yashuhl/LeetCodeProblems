@@ -48,6 +48,8 @@ All the words in wordList are unique.
 
 using namespace std;
 
+// Time complexity is O(n*strSize*26) where 26 is character change from a to z
+// space complexity is O(n) for forming set and queue
 int ladderLength(string beginWord, string endWord, vector<string>& wordList) 
 {
 
@@ -104,6 +106,8 @@ int ladderLength(string beginWord, string endWord, vector<string>& wordList)
                 // unique prperty of set , cannot have duplicates so count can be 1 or 0
                 if(wordSet.count(temp))
                 {
+                    //for different transformation at same layer the deapth value is same
+                    // eg: if hot is transformed into dot followed by lot has same dapth
                     q.push({temp,deapth+1});
                     wordSet.erase(temp);
                 }
