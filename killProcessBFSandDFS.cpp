@@ -46,6 +46,8 @@ void dfs_helper(unordered_map<int,vector<int>> &mapParentChild, int index, vecto
     }
 }
 
+// Time complexity is O(n)
+// Space complexity is O(n)
 vector<int> killProcess(vector<int>& pid, vector<int>& ppid, int kill) 
 {
     // map parent to child process and will be in ascending order
